@@ -10,4 +10,5 @@ $ docker run --name whisper hanmanhui/whisper
 You can use this data volume from other applicaiton container. Below is example:
 
 ``
-$ docker run -d --name carbon --volumes-from whisper hanmanhui/carbon`
+$ docker run -d --name carbon --volumes-from whisper hanmanhui/carbon
+``
