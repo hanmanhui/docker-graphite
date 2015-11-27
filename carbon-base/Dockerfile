@@ -2,7 +2,8 @@ FROM nacyot/ubuntu
 MAINTAINER Manhui Han <hanmanhui@gmail.com>
 
 RUN apt-get -y update
-RUN apt-get -y install python python-twisted
+RUN apt-get -y install python python-twisted python-dev python-pip
+RUN pip install 'Twisted<12.0'
 
 WORKDIR /usr/local/src
 
